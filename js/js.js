@@ -41,6 +41,7 @@ function start(){ //Início da função start()
         moveinimigo1();
         moveinimigo2();
         moveamigo();
+        colisao();
     }//Fim da função loop
 
     //Função movimenta o fundo do jogo
@@ -129,4 +130,38 @@ function start(){ //Início da função start()
             }
         }//fecha executaDisparo
     }//fecha função Disparo
+
+    function colisao(){
+        var colisao1 = ($("#jogador").collision($("#inimigo1")));
+        //jogador com inimigo 1
+        if (colisao1.length > 0){
+            inimigo1X = parseInt($("#inimigo1").css("left"));
+            inimigo1Y = parseInt($("#inimigo1").css("top"));
+            explosao1(inimigo1X,inimigo1Y);
+
+            posicaoY = parseInt(Math.random * 334);
+            $("#inimigo1").css("left",694);
+            $("#inimigo1").css("top",posicaoY)
+        }
+    }// fim função colisão
+
+    function explosao1(inimigo1X, inimigo1Y){
+
+        //somExplosao.play();
+        $("#fundoGame").append("<div id='explosao1'></div>");
+        $("#explosao1").css("background-image","url(imgs/explosao.png");
+
+        var div = $("#explosao1");
+        div.css("top",inimigo1Y);
+        div.css("left",inimigo1X);
+        div.animate({width:200, opacity:0},"slow");
+
+        var tempoExplosao = window.setInterval(removeExplosao, 1000);
+
+        function removeExplosao(){
+            div.remove();
+            window.clearInterval(tempoExplosao);
+            tempoExplosao=null;
+        }
+    }//fim função explosão1
 }//Fim função start()
