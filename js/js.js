@@ -13,6 +13,7 @@ function start(){ //Início da função start()
     var jogo = {}
     var velocidade = 5;
     var posicaoY = parseInt(Math.random * 334);
+    var podeAtirar = true;
 
     var TECLA = {
         W: 87,
@@ -67,6 +68,7 @@ function start(){ //Início da função start()
 
         if(jogo.pressionou[TECLA.D]){
             //chama função disparo
+            disparo();
         }
     }//fim move jogador
 
@@ -99,4 +101,32 @@ function start(){ //Início da função start()
             $("#amigo").css("left",0);
         }
     }//fim função amigo
+
+    function disparo(){
+        if( podeAtirar){
+            podeAtirar = false;
+
+            topo = parseInt($("#jogador").css("top"));
+            posicaoX = parseInt($("#jogador").css("left"));
+            tiroX = posicaoX + 190;
+            topoTiro = topo + 37;
+            $("#fundoGame").append("<div id='disparo'></div>");
+            $("#disparo").css("top",topoTiro);
+            $("#disparo").css("left", tiroX);
+
+            var tempoDisparo = window.setInterval(executaDisparo, 30);
+        }//fecha pode atirar
+
+        function executaDisparo(){
+            posicaoX = parseInt($("#disparo").css("left"));
+            $("#disparo").css("left", posicaoX + 15 );
+
+            if ( posicaoX > 900){
+                window.clearInterval(tempoDisparo);
+                tempoDisparo = null;
+                $("#disparo").remove();
+                podeAtirar = true;
+            }
+        }//fecha executaDisparo
+    }//fecha função Disparo
 }//Fim função start()
