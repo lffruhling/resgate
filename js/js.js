@@ -180,6 +180,9 @@ function start(){ //Início da função start()
 
         //Verifica disparo com inimigo1 (tiro acerta helicoptero)
         if (colisao3.length > 0){
+
+            velocidade = velocidade + 0.3;
+            //console.log(velocidade);
             pontos = pontos + 100;
 
             inimigo1X = parseInt($("#inimigo1").css("left"));

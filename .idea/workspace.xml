@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02b974e4-59bc-4b43-9db2-8966ab420334" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/estilos.css" afterPath="$PROJECT_DIR$/css/estilos.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/js.js" afterPath="$PROJECT_DIR$/js/js.js" />
     </list>
     <ignored path="resgate.iws" />
@@ -38,9 +37,23 @@
       <file leaf-file-name="js.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82539684">
-              <caret line="334" column="19" selection-start-line="334" selection-start-column="19" selection-end-line="334" selection-end-column="19" />
-              <folding />
+            <state vertical-scroll-proportion="0.89569163">
+              <caret line="184" column="14" selection-start-line="184" selection-start-column="14" selection-end-line="184" selection-end-column="14" />
+              <folding>
+                <element signature="n#!!block;n#loop#0;n#!!block;n#start#0" expanded="false" />
+                <element signature="n#!!block;n#movefundo#0;n#!!block;n#start#0" expanded="false" />
+                <element signature="n#!!block;n#movejogador#0;n#!!block;n#start#0" expanded="false" />
+                <element signature="n#!!block;n#moveinimigo2#0;n#!!block;n#start#0" expanded="false" />
+                <element signature="n#!!block;n#moveamigo#0;n#!!block;n#start#0" expanded="false" />
+                <element signature="n#!!block;n#disparo#0;n#!!block;n#start#0" expanded="false" />
+                <element signature="n#!!block;n#explosao1#0;n#!!block;n#start#0" expanded="false" />
+                <element signature="n#!!block;n#explosao2#0;n#!!block;n#start#0" expanded="false" />
+                <element signature="n#!!block;n#explosao3#0;n#!!block;n#start#0" expanded="false" />
+                <element signature="n#!!block;n#reposicionaInimigo2#0;n#!!block;n#start#0" expanded="false" />
+                <element signature="n#!!block;n#reposicionaAmigo#0;n#!!block;n#start#0" expanded="false" />
+                <element signature="n#!!block;n#placar#0;n#!!block;n#start#0" expanded="false" />
+                <element signature="n#!!block;n#energia#0;n#!!block;n#start#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -285,7 +298,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#!!block;n#loop#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#movefundo#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#movejogador#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#moveinimigo2#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#moveamigo#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#disparo#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#explosao1#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#explosao2#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#explosao3#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#reposicionaInimigo2#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#reposicionaAmigo#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#placar#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#energia#0;n#!!block;n#start#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -309,7 +336,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="95" column="44" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
-          <folding />
+          <folding>
+            <element signature="n#!!block;n#loop#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#movefundo#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#movejogador#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#moveinimigo2#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#moveamigo#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#disparo#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#explosao1#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#explosao2#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#explosao3#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#reposicionaInimigo2#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#reposicionaAmigo#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#placar#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#energia#0;n#!!block;n#start#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -339,9 +380,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/js.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82539684">
-          <caret line="334" column="19" selection-start-line="334" selection-start-column="19" selection-end-line="334" selection-end-column="19" />
-          <folding />
+        <state vertical-scroll-proportion="0.89569163">
+          <caret line="184" column="14" selection-start-line="184" selection-start-column="14" selection-end-line="184" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!block;n#loop#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#movefundo#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#movejogador#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#moveinimigo2#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#moveamigo#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#disparo#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#explosao1#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#explosao2#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#explosao3#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#reposicionaInimigo2#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#reposicionaAmigo#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#placar#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#energia#0;n#!!block;n#start#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
