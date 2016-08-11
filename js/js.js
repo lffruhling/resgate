@@ -9,6 +9,7 @@ function start(){ //Início da função start()
     $("#fundoGame").append("<div id='inimigo2'></div>");
     $("#fundoGame").append("<div id='amigo' class='anima3'></div>");
     $("#fundoGame").append("<div id='placar'></div>");
+    $("#fundoGame").append("<div id='energia'></div>");
 
     //Prinicipais variáveis do jogo
     var jogo        = {}
@@ -19,7 +20,7 @@ function start(){ //Início da função start()
     var pontos      = 0;
     var salvos      = 0;
     var perdidos    = 0;
-
+    var energiaAtual= 3;
 
     var TECLA = {
         W: 87,
@@ -50,6 +51,7 @@ function start(){ //Início da função start()
         moveamigo();
         colisao();
         placar();
+        energia();
     }//Fim da função loop
 
     //Função movimenta o fundo do jogo
@@ -153,6 +155,7 @@ function start(){ //Início da função start()
         //console.log(colisao1);
         //Verifica se houve colisão entre jogador e helicoptero
         if (colisao1.length > 0){
+            energiaAtual--;
             //captura local da explosão
             inimigo1X = parseInt($("#inimigo1").css("left"));
             inimigo1Y = parseInt($("#inimigo1").css("top"));
@@ -165,6 +168,7 @@ function start(){ //Início da função start()
 
         //verifica se houve colisão entre jogador e caminhão
         if (colisao2.length > 0){
+            energiaAtual--;
             inimigo2X = parseInt($("#inimigo2").css("left"));
             inimigo2Y = parseInt($("#inimigo2").css("top"));
             explosao2(inimigo2X, inimigo2Y);
@@ -316,4 +320,21 @@ function start(){ //Início da função start()
     function placar(){
         $("#placar").html("<h2>Pontos: " + pontos + " Salvos: " + salvos + " Perdidos: " + perdidos + "</h2>");
     }//Fim func placar
+
+    function energia(){
+        switch (energiaAtual){
+            case 3:
+                $("#energia").css("background-image","url(imgs/energia3.png)");
+                break;
+            case 2:
+                $("#energia").css("background-image","url(imgs/energia2.png)");
+                break;
+            case 1:
+                $("#energia").css("background-image","url(imgs/energia1.png)");
+                break;
+            case 0:
+                $("#energia").css("background-image","url(imgs/energia0.png)");
+                break;
+        }
+    }
 }//Fim função start()
