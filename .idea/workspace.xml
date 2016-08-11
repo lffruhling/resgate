@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02b974e4-59bc-4b43-9db2-8966ab420334" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/estilos.css" afterPath="$PROJECT_DIR$/css/estilos.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/js.js" afterPath="$PROJECT_DIR$/js/js.js" />
     </list>
     <ignored path="resgate.iws" />
@@ -38,8 +38,8 @@
       <file leaf-file-name="js.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6258503">
-              <caret line="304" column="27" selection-start-line="304" selection-start-column="27" selection-end-line="304" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.79591835">
+              <caret line="382" column="66" selection-start-line="382" selection-start-column="66" selection-end-line="382" selection-end-column="66" />
               <folding>
                 <element signature="n#!!block;n#loop#0;n#!!block;n#start#0" expanded="false" />
                 <element signature="n#!!block;n#movefundo#0;n#!!block;n#start#0" expanded="false" />
@@ -51,6 +51,7 @@
                 <element signature="n#!!block;n#colisao#0;n#!!block;n#start#0" expanded="false" />
                 <element signature="n#!!block;n#explosao1#0;n#!!block;n#start#0" expanded="false" />
                 <element signature="n#!!block;n#explosao2#0;n#!!block;n#start#0" expanded="false" />
+                <element signature="n#!!block;n#explosao3#0;n#!!block;n#start#0" expanded="false" />
                 <element signature="n#!!block;n#reposicionaInimigo2#0;n#!!block;n#start#0" expanded="false" />
                 <element signature="n#!!block;n#reposicionaAmigo#0;n#!!block;n#start#0" expanded="false" />
                 <element signature="n#!!block;n#placar#0;n#!!block;n#start#0" expanded="false" />
@@ -63,8 +64,8 @@
       <file leaf-file-name="estilos.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/estilos.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.522388">
-              <caret line="122" column="13" selection-start-line="122" selection-start-column="13" selection-end-line="122" selection-end-column="13" />
+            <state vertical-scroll-proportion="-10.179105">
+              <caret line="139" column="17" selection-start-line="139" selection-start-column="17" selection-end-line="139" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -83,8 +84,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/estilos.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/estilos.css" />
         <option value="$PROJECT_DIR$/js/js.js" />
       </list>
     </option>
@@ -311,6 +312,7 @@
             <element signature="n#!!block;n#colisao#0;n#!!block;n#start#0" expanded="false" />
             <element signature="n#!!block;n#explosao1#0;n#!!block;n#start#0" expanded="false" />
             <element signature="n#!!block;n#explosao2#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#explosao3#0;n#!!block;n#start#0" expanded="false" />
             <element signature="n#!!block;n#reposicionaInimigo2#0;n#!!block;n#start#0" expanded="false" />
             <element signature="n#!!block;n#reposicionaAmigo#0;n#!!block;n#start#0" expanded="false" />
             <element signature="n#!!block;n#placar#0;n#!!block;n#start#0" expanded="false" />
@@ -350,6 +352,7 @@
             <element signature="n#!!block;n#colisao#0;n#!!block;n#start#0" expanded="false" />
             <element signature="n#!!block;n#explosao1#0;n#!!block;n#start#0" expanded="false" />
             <element signature="n#!!block;n#explosao2#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#explosao3#0;n#!!block;n#start#0" expanded="false" />
             <element signature="n#!!block;n#reposicionaInimigo2#0;n#!!block;n#start#0" expanded="false" />
             <element signature="n#!!block;n#reposicionaAmigo#0;n#!!block;n#start#0" expanded="false" />
             <element signature="n#!!block;n#placar#0;n#!!block;n#start#0" expanded="false" />
@@ -366,14 +369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/estilos.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.522388">
-          <caret line="122" column="13" selection-start-line="122" selection-start-column="13" selection-end-line="122" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.903226">
@@ -382,10 +377,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/estilos.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.179105">
+          <caret line="139" column="17" selection-start-line="139" selection-start-column="17" selection-end-line="139" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/js.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6258503">
-          <caret line="304" column="27" selection-start-line="304" selection-start-column="27" selection-end-line="304" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.79591835">
+          <caret line="382" column="66" selection-start-line="382" selection-start-column="66" selection-end-line="382" selection-end-column="66" />
           <folding>
             <element signature="n#!!block;n#loop#0;n#!!block;n#start#0" expanded="false" />
             <element signature="n#!!block;n#movefundo#0;n#!!block;n#start#0" expanded="false" />
@@ -397,6 +400,7 @@
             <element signature="n#!!block;n#colisao#0;n#!!block;n#start#0" expanded="false" />
             <element signature="n#!!block;n#explosao1#0;n#!!block;n#start#0" expanded="false" />
             <element signature="n#!!block;n#explosao2#0;n#!!block;n#start#0" expanded="false" />
+            <element signature="n#!!block;n#explosao3#0;n#!!block;n#start#0" expanded="false" />
             <element signature="n#!!block;n#reposicionaInimigo2#0;n#!!block;n#start#0" expanded="false" />
             <element signature="n#!!block;n#reposicionaAmigo#0;n#!!block;n#start#0" expanded="false" />
             <element signature="n#!!block;n#placar#0;n#!!block;n#start#0" expanded="false" />
