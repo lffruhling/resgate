@@ -144,7 +144,7 @@ function start(){ //Início da função start()
         var colisao6 = ($("#inimigo2").collision($("#amigo")));
 
         //Console.log usado para saber o que tem dentro da colisao1, muito bom para debug.
-        console.log(colisao1);
+        //console.log(colisao1);
         //Verifica se houve colisão entre jogador e helicoptero
         if (colisao1.length > 0){
             //captura local da explosão
@@ -203,6 +203,16 @@ function start(){ //Início da função start()
             $("#amigo").remove();
         }
 
+        //Verifica colisão com Caminhão vc amigo
+        if (colisao6.length > 0){
+            amigoX = parseInt($("#amigo").css("left"));
+            amigoY = parseInt($("#amigo").css("top"));
+            explosao3(amigoX, amigoY);
+
+            $("#amigo").remove();
+
+            reposicionaAmigo();
+        }
     }//Fim função colisao
 
     //Explosão 1
@@ -248,6 +258,21 @@ function start(){ //Início da função start()
             tempoExplosao2 = null;
         }
     }//Fim explosão2
+
+    //Explosão 3
+    function explosao3(amigoX, amigoY){
+        $("#fundoGame").append("<div id='explosao3' class='anima4'></div>");
+        $("#explosao3").css("top", amigoY);
+        $("#explosao3").css("left", amigoX);
+
+        var tempoExplosao3 = window.setInterval(resetaExplosao3, 2000);
+
+        function resetaExplosao3(){
+            $("#explosao3").remove();
+            window.clearInterval(tempoExplosao3);
+            tempoExplosao3 = null;
+        }
+    }//fim explosao 3
 
     //Reposiciona inimigo2
     function reposicionaInimigo2(){
