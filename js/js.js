@@ -42,6 +42,7 @@ function start(){ //Início da função start()
         moveinimigo1();
         moveinimigo2();
         moveamigo();
+        colisao();
     }//Fim da função loop
 
     //Função movimenta o fundo do jogo
@@ -131,22 +132,48 @@ function start(){ //Início da função start()
         }
     } //Fecha disparo()
 
-    /*function colisao (){
+    function colisao (){
         var colisao1 = ($("#jogador").collision($("#inimigo1")));
-        var colisao2 = ($("#jogador").collision($("#inimigo2")));
-        var colisao3 = ($("#disparo").collision($("#inimigo1")));
-        var colisao4 = ($("#disparo").collision($("#inimigo2")));
-        var colisao5 = ($("#jogador").collision($("#amigo")));
-        var colisao6 = ($("#inimigo2").collision($("#amigo")));
+        //Pega colisão do jogador com o inimigo1 (helicoptero)
 
-        //verifica colisão do jogador com o inimigo1
-        if(colisao1.length > 0){
-            inimigoX = parseInt($("#inimigo1").css("left"));
-            inimigoY = parseInt($("#inimigo1").css("top"));
+        //Console.log usado para saber o que tem dentro da colisao1, muito bom para debug.
+        console.log(colisao1);
+        if (colisao1.length > 0){
+            //captura local da explosão
+            inimigo1X = parseInt($("#inimigo1").css("left"));
+            inimigo1Y = parseInt($("#inimigo1").css("top"));
+            explosao1(inimigo1X, inimigo1Y);
 
-            posicaoY = parseInt(Math.random * 334);
-            $("#inimigo1").css("left",694);
-            $("#inimigo1").css("top",posicaoY);
+            posicaoY = parseInt(Math.random() * 334);
+            $("#inimigo1").css("left", 694);
+            $("#inimigo1").css("top", posicaoY);
         }
-    }//Fim função colisao*/
+
+    }//Fim função colisao
+
+    //Explosão 1
+    function explosao1(inimigo1X,inimigo1Y){
+        //somExplosao.play();
+
+        $("#fundoGame").append("<div id='explosao1'></div>");
+        $("#explosao1").css("background-image", "url(imgs/explosao.png)");
+
+        /*Para facilitar a digitação, foi criada a var div, esta var
+        * recebe a dis explosao1, ou seja, a partir deste ponto usar
+        * $("#explosao1").algumaCoisa ou div.algumaCoisa, tem o mesmo
+        * valor para o código.*/
+
+        var div = $("#explosao1");
+        div.css("top", inimigo1Y);
+        div.css("left", inimigo1X);
+        div.animate({width:200, opacity:0}, "slow");
+
+        var tempoExplosao = window.setInterval(removeExplosao, 1000);
+
+        function removeExplosao(){
+            div.remove();
+            window.clearInterval(tempoExplosao);
+            tempoExplosao = null;
+        }
+    }// Fim explosao1
 }//Fim função start()
