@@ -13,6 +13,7 @@ function start(){ //Início da função start()
     var jogo = {}
     var velocidade = 5;
     var posicaoY = parseInt(Math.random * 334);
+    var podeAtirar = true;
 
     var TECLA = {
         W: 87,
@@ -22,6 +23,7 @@ function start(){ //Início da função start()
 
     jogo.pressionou = [];
 
+    //verifica se o usuário pressionou alguma tecla
     $(document).keydown(function(e){
         jogo.pressionou[e.which] = true;
     });
@@ -67,6 +69,7 @@ function start(){ //Início da função start()
 
         if(jogo.pressionou[TECLA.D]){
             //chama função disparo
+            disparo();
         }
     }//fim move jogador
 
@@ -99,4 +102,51 @@ function start(){ //Início da função start()
             $("#amigo").css("left",0);
         }
     }//fim função amigo
+
+    function disparo() {
+        if (podeAtirar) {
+            podeAtirar = false;
+
+            topo = parseInt($("#jogador").css("top"));
+            posicaoX = parseInt($("#jogador").css("left"));
+            tiroX = posicaoX + 190;
+            topoTiro = topo + 37;
+            $("#fundoGame").append("<div id='disparo'></div>");
+            $("#disparo").css("top", topoTiro);
+            $("#disparo").css("left", tiroX);
+
+            var tempoDisparo = window.setInterval(executaDisparo, 30)
+        }
+
+        function executaDisparo(){
+            posicaoX = parseInt($("#disparo").css("left"));
+            $("#disparo").css("left", posicaoX + 15);
+
+            if (posicaoX > 900){
+                window.clearInterval(tempoDisparo);
+                tempoDisparo = null;
+                $("#disparo").remove();
+                podeAtirar = true;
+            }
+        }
+    } //Fecha disparo()
+
+    /*function colisao (){
+        var colisao1 = ($("#jogador").collision($("#inimigo1")));
+        var colisao2 = ($("#jogador").collision($("#inimigo2")));
+        var colisao3 = ($("#disparo").collision($("#inimigo1")));
+        var colisao4 = ($("#disparo").collision($("#inimigo2")));
+        var colisao5 = ($("#jogador").collision($("#amigo")));
+        var colisao6 = ($("#inimigo2").collision($("#amigo")));
+
+        //verifica colisão do jogador com o inimigo1
+        if(colisao1.length > 0){
+            inimigoX = parseInt($("#inimigo1").css("left"));
+            inimigoY = parseInt($("#inimigo1").css("top"));
+
+            posicaoY = parseInt(Math.random * 334);
+            $("#inimigo1").css("left",694);
+            $("#inimigo1").css("top",posicaoY);
+        }
+    }//Fim função colisao*/
 }//Fim função start()
