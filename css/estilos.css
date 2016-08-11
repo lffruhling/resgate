@@ -21,6 +21,17 @@ h3{
     color: #603A03;
 }
 
+a{
+    color: #603A03;
+}
+
+a:hover{
+    color: #603A03;
+}
+
+a:active{
+    color: #603A03;
+}
 body{
     background-image: url(../imgs/fundo.jpg);
 }

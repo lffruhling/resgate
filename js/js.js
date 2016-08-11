@@ -380,8 +380,14 @@ function start(){ //Início da função start()
         $("#amigo").remove();
 
         $("#fundoGame").append("<div id='fim'></div>");
-        $("#fim").html("<h1> Game Over </h1><p>Sua pontuação foi: " + pontos + "</p>" + "<div id='reinicia' onclick='reiniciaJogo()'><h3>Jogar Novamente</h3></div> ");
+        $("#fim").html("<h1> Game Over </h1><p>Sua pontuação foi: " + pontos + "</p>" + "<div id='reinicia' onclick='reiniciaJogo()'><h3><a href='#'>Jogar Novamente</a></h3></div> ");
     }//fim func gameOver
 
-
 }//Fim função start()
+
+//Reiniciar o jogo
+function reiniciaJogo(){
+    somGameOver.pause();
+    $("#fim").remove();
+    start();
+}//fim func reiniciarJogo
